@@ -1,1 +1,4 @@
-# Clix_code_1
+# README #
+
+1. Clone the repo.
+2. bower install
