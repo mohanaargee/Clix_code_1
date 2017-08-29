@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>NoteBook Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/foundation-icon-fonts/foundation-icons.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:200,300,400,500,600,700,900"
+        rel="stylesheet">
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.accordion.js"></script>
+    <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="css/_clix2017.css" rel="stylesheet" type="text/css" />
+   
+</head>
+<body>
+    <nav class="top-bar" data-topbar role="navigation" id="menu_bar_gstudio">
+        <ul class="title-area">
+            <li class="name show-for-medium-up">
+                <a class="loggedin-user" href="#">
+                    <img src="./images/course_backbround-1.png" />
+                </a>
+            </li>
+            <li class="name hide-for-medium-up">
+                <i class="fi-list side-bar-button"></i>
+                <i class="fi-x close-menu-dropdown hide"></i>
+                <a class="loggedin-user" href="#">
+                    <div></div>
+                </a>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar"><a href="#"><i class="icons-large fi-torso"></i>&nbsp;<span class="badge badge-blue">1</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right show-for-medium-up">
+                <li class=""><a href="#">Blog</a></li>
+                <li class=""><a href="#"><i class="icons-medium fi-info"></i>&nbsp;Help Topics</a></li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <img src="" class="user-profile-pic-small"/>
+                        Blue Parrot
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="right hide-for-medium-up dropdown-menu hide">
+                <li class=""><a href="#">My Desk</a></li>
+                <li class=""><a href="#">Explore Groups</a></li>
+                <li class=""><a href="#">Blog</a></li>
+                <li class=""><a href="#"><i class="fi-info"></i>&nbsp;Help Topics</a></li>
+                <!--li class="has-dropdown not-click">
+                    <ul class="dropdown">
+                        <!--li class="title back js-generated">
+                            <h5>
+                                <a href="javascript:void(0)">Back</a>
+                            </h5>
+                        </li>
+                        <li class="parent-link hide-for-medium-up">
+                            <a class="parent-link js-generated" href="#">Right Dropdown</a>
+                        </li>
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                    </ul>
+                </li-->
+            </ul>
+            <ul class="right hide-for-medium-up side-bar-menu hide">
+                <li class="">
+                    <a href="#">
+                        <i class="icons-medium fi-torso"></i>&nbsp;
+                        <span>LOGGED IN BUDDIES</span>&nbsp;
+                        <span class="badge badge-blue">1</span>
+                    </a>
+                </li>
+                <li class="has-dropdown not-click">
+                    <a href="#">
+                        <img src="" class="user-profile-pic-small"/>
+                        Blue Parrot
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class='add_buddy'>
+                        <center>
+                            <i class="fi-plus round-icon"></i>&nbsp;
+                            <span>Add Buddy</span>
+                        </center>
+                    </a>
+                </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left show-for-large-up">
+                <li class="active"><a href="#">My Desk</a></li>
+                <li><a href="#">Explore Groups</a></li>
+            </ul>
+          </section>
+    </nav>
+    <!-- Header Menu -->
+    <!-- The name of the top most class can be changed
+        to denote the place this header is being used. -->
+    <div class="lms_secondary_header">
+        <div class="topnav" id="myTopnav">
+            <a href="#">Overview</a> <a href="#">Lessons</a> <a href="#">Resources</a> <a href="#">
+                Gallery</a> <a href="#" class="selected">Notebook</a> <a href="javascript:void(0);"
+                    class="icon" onclick="myFunction()"><i class="fa fa-chevron-down" aria-hidden="true">
+                    </i></a>
+        </div>
+    </div>
+    <!-- Body Content-->
+    <div class="roww">
+        <div class="large-3 columns ">
+            <div class="left_panel">
+                <div class="txtalign">
+                    <ul class="stack-for-small button-group">
+                        <li><a href="#" class="secondary button glosary_buttons">All Notes 1</a></li>
+                        <li><a href="#" class="secondary button glosary_buttons">Notes for me 2</a></li>
+                    </ul>
+                </div>
+                <div class="txtalign">
+                    <a href="#">This is an Example Note</a></div>
+                <div class="txtalign">
+                    <a href="#" class="left_sidebar">Another Example Note</a></div>
+                <div class="txtalign">
+                    <a href="#" class="button glosary_buttons smallbtn"><span class="badge1"><i class="fi-plus">
+                    </i></span>Add Note</a></div>
+            </div>
+        </div>
+        <div class="large-9 columns">
+            <a href="#" data-reveal-id="firstModal" class="radius button glosary_buttons">Glossary 1</a>
+            <!-- Reveal Modals begin Glossary Form Content-->
+            <div id="firstModal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle"
+                aria-hidden="true" role="dialog">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <h5 class="glossary_title">
+                            Create glossary term
+                        </h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label class="glosary_form_label">
+                            <b>Word</b></label>
+                        <div class="select1">
+                            <input type="text" placeholder="Fugiat"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label class="glosary_form_label">
+                            <b>Type of Meaning </b>(Noun, Verb, Adjective....)</label>
+                        <div class="select1">
+                            <select class="select1">
+                                <option value="husker">Verb</option>
+                                <option value="starbuck">Star</option>
+                                <option value="hotdog">Pronoun</option>
+                                <option value="apollo">Apollo</option>
+                            </select></div>
+                    </div>
+                    <div class="large-6 columns">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label class="glosary_form_label">
+                            <b>Definition</b></label>
+                        <div class="select1">
+                            <textarea class="select1" placeholder="Text Here..."></textarea></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label class="glosary_form_label">
+                            <b>Pronounciation</b></label>
+                        <div class="select1">
+                            <input type="text" class="select1" placeholder="Text Here...">
+                        </div>
+                    </div>
+                    <div class="large-6 columns">
+                        <button class="secondary1 expand">
+                            <a href=""><i class="fi-play"></i>Play Sound</a> <a href=""><i class="fi-refresh"></i>
+                                Re-record</a></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label class="glosary_form_label">
+                            <b>Synonym</b> (Optional)</label>
+                        <div class="select1">
+                            <input type="text" class="select1" placeholder="Add the text here..."></div>
+                    </div>
+                    <div class="large-6 columns">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label class="glosary_form_label">
+                            <b>Antonym </b>(Optional)</label>
+                        <div class="select1">
+                            <input type="text" class="select1" placeholder="Add the text here..."></div>
+                    </div>
+                    <div class="large-6 columns">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <button class="secondary2 expand">
+                            <a href="">+ Meaning</a></button>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="large-12 columns ">
+                        <span class="glossary_button">
+                            <button class="cancelbtn">
+                                Cancel</button>
+                            <button class="button radius">
+                                Add Term</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!--Glossary Form Popup script -->
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
