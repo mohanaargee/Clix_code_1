@@ -10,12 +10,17 @@ $color_shark_approx: #282929;
 $color_orange_roughy_approx: #d85616;
 $color_lochmara_approx: #0b82bd;
 $color_romance_approx: #fefefe;
+$color_silver_chalice_approx: #afacac;
+$color_ironside_gray_approx: #676767;
+$color_gunsmoke_approx: #858788;
+$color_celeste_approx: #d0d0d0;
+$color_silver_approx: #bdbdbd;
+
 
 body
         {
             background: white;
         }
-
 
 .roww {
 	width: 100%;
@@ -47,7 +52,7 @@ button {
 		background-color: $color_mercury_approx;
 		border-color: $color_pink_swan_approx;
 		padding: 5px;
-		margin-top: 30px;
+		margin-top: 42px;
 		> a {
 			float: left;
 			margin-left: 57px;
@@ -130,6 +135,43 @@ button {
 	padding: 0;
 	height: 40px;
 	width: 100%;
+}
+.label_margin {
+	margin-top: 17px;
+}
+.mobile-app-toggle {
+	display: flex;
+	width: 84%;
+	margin: 13px 0 9px 33px;
+	border: 2px solid $color_silver_chalice_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.625rem;
+	overflow: hidden;
+	.button {
+		background: transparent;
+		color: $color_ironside_gray_approx;
+		margin-bottom: 0;
+		flex: 1 0 0;
+		padding: 8px;
+		&.is-active {
+			background: $color_celeste_approx;
+			color: $color_ironside_gray_approx;
+		}
+		&:nth-child(n + 1) {
+			border-left: 1px solid $color_gunsmoke_approx;
+		}
+	}
+}
+.badge2 {
+	display: inline-block;
+	height: 16px;
+	width: 13px;
+	line-height: 19px;
+	text-align: center;
+	background: $color_silver_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 1px;
+	font-size: 12px;
 }
 @media screen and(max-width: 450px) {
 	.left_panel {
