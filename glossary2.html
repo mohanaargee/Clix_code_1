@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>NoteBook Page</title>
@@ -16,7 +16,6 @@
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet"
         type="text/css" />
     <link href="css/_clix2017.css" rel="stylesheet" type="text/css" />
-    
 </head>
 <body>
     <nav class="top-bar" data-topbar role="navigation" id="menu_bar_gstudio">
@@ -122,11 +121,11 @@
     <div class="roww">
         <div class="large-3 columns ">
             <div class="left_panel">
-                <div class="txtalign">
-                    <ul class="stack-for-small button-group">
-                        <li><a href="#" class="secondary button glosary_buttons">All Notes 1</a></li>
-                        <li><a href="#" class="secondary button glosary_buttons">Notes for me 2</a></li>
-                    </ul>
+                <div class="mobile-app-toggle" data-mobile-app-toggle>
+                    <button class="button is-active">
+                        All Notes <span class="badge2 primary">2</span></button>
+                    <button class="button">
+                        Notes by Me <span class="badge2 primary">2</span></button>
                 </div>
                 <div class="txtalign">
                     <a href="#">This is an Example Note</a></div>
@@ -138,15 +137,16 @@
             </div>
         </div>
         <div class="large-9 columns">
-            <a href="#" data-reveal-id="firstModal" class="radius button glosary_buttons">Glossary 2</a>
+            <a href="#" data-reveal-id="firstModal" class="radius button glosary_buttons">Glossary
+                2</a>
             <!-- Reveal Modals begin Glossary Form Content-->
             <div id="firstModal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle"
                 aria-hidden="true" role="dialog">
                 <div class="row">
                     <div class="large-12 columns">
-                        <h5 class="glossary_title">
+                        <h4 class="glossary_title">
                             Create glossary term
-                        </h5>
+                        </h4>
                     </div>
                 </div>
                 <div class="row">
@@ -182,7 +182,7 @@
                 </div>
                 <div class="row">
                     <div class="large-6 columns">
-                        <label class="glosary_form_label">
+                        <label class="glosary_form_label label_margin">
                             <b>Pronounciation</b></label>
                         <div class="select1">
                             <input type="text" class="select1" placeholder="Text Here...">
@@ -190,7 +190,7 @@
                     </div>
                     <div class="large-6 columns">
                         <button class="secondary1 expand">
-                           <a href=""><i class="fi-volume"></i>+ Sound</a></button>
+                            <a href=""><i class="fi-volume"></i>+ Sound</a></button>
                     </div>
                 </div>
                 <div class="row">
@@ -243,6 +243,16 @@
         }
     </script>
     <!--Glossary Form Popup script -->
+    <script type="text/javascript">
+
+        $('[data-mobile-app-toggle] .button').click(function () {
+            $(this).siblings().removeClass('is-active');
+            $(this).addClass('is-active');
+        });
+
+
+
+    </script>
     <script>
         $(document).foundation();
     </script>
